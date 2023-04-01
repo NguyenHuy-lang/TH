@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/imageviewimg"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/user2"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="16dp"
+        tools:ignore="MissingConstraints"></ImageView>
+
+    <TextView
+        app:layout_constraintTop_toTopOf="@+id/imageviewimg"
+        android:id="@+id/tvname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text="ten nguoi dung"
+        android:textSize="20dp"
+        app:layout_constraintLeft_toRightOf="@+id/imageviewimg"
+        tools:layout_editor_absoluteY="0dp"></TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="time checkin"
+        app:layout_constraintTop_toBottomOf="@+id/tvname"
+        app:layout_constraintLeft_toRightOf="@+id/imageviewimg"
+        app:layout_constraintLeft_toLeftOf="@+id/tvname"
+        android:id="@+id/tvtimecheckin">
+    </TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="date checkin"
+        app:layout_constraintTop_toBottomOf="@+id/tvtimecheckin"
+        app:layout_constraintLeft_toRightOf="@+id/imageviewimg"
+        app:layout_constraintLeft_toLeftOf="@+id/tvtimecheckin"
+
+        android:id="@+id/tvdatecheckin">
+    </TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        app:layout_constraintTop_toBottomOf="@id/tvdatecheckin"
+        app:layout_constraintLeft_toLeftOf="@+id/tvdatecheckin"
+        android:text="female"
+        app:layout_constraintLeft_toRightOf="@+id/imageviewimg"
+        app:layout_constraintBottom_toBottomOf="@+id/imageviewimg"
+        android:id="@+id/tvgender">
+    </TextView>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="44dp"
+        android:text="REMOVE"
+        android:id="@+id/btremove"
+        app:layout_constraintLeft_toRightOf="@+id/tvdatecheckin"
+        app:layout_constraintTop_toTopOf="@+id/tvtimecheckin"></Button>
+</androidx.constraintlayout.widget.ConstraintLayout>
